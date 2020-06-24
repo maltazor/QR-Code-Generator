@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="mendix.qrcodegenerator.QRCodeGenerator" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>QRCode Generator</name>
+    <description>Pluggable widget to generate QR codes</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="Data Source">
+            <property key="link" type="attribute">
+                <caption>Value</caption>
+                <description>Contents of the QR Code</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="size" type="string" defaultValue="128">
+                <caption>Size</caption>
+                <description>Size of the QR code</description>
+            </property>
+            <property key="bgColor" type="string" defaultValue="#FFFFFF">
+                <caption>Background Color</caption>
+                <description></description>
+            </property>
+            <property key="fgColor" type="string" defaultValue="#000000">
+                <caption>Forground Color</caption>
+                <description></description>
+            </property>
+            <property key="level" type="enumeration" defaultValue="L">
+                <caption>Level</caption>
+                <description></description>
+                <enumerationValues>
+                    <enumerationValue key="L">L</enumerationValue>
+                    <enumerationValue key="M">M</enumerationValue>
+                    <enumerationValue key="Q">Q</enumerationValue>
+                    <enumerationValue key="H">H</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
